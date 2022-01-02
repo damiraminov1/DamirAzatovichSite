@@ -1,0 +1,63 @@
+{% extends 'main/base.html' %}
+
+{% block app_content %}
+    <div align="center">
+        <h1>Мои основные проекты:</h1>
+    </div>
+    <div>
+        <div class="navbar-brand" href="https://github.com/hecronk/TimetableHecronkTelegramBot">
+            <p>
+                <a href="https://github.com/hecronk/TimetableHecronkTelegramBot" style="text-decoration: none">
+                    <img src="{{ url_for('static', filename = 'icons/telegram.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
+                </a>
+                <a href="https://github.com/hecronk/TimetableHecronkTelegramBot">Бот в Telegram</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot1.jpg') }}"  width="592" height="509" >
+                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot2.jpg') }}"  width="592" height="509" >
+                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot3.jpg') }}"  width="592" height="509" >
+            </p>
+            <p>
+                УрГУПС Расписание - бот для скачивания актуального расписания. Написан на Python, с использованием PyTelegramBotAPI. <br>
+                Работает 24/7 и выполняет роль агрегатора актуального расписания УрГУПС. <a href="https://t.me/USURT_TIMETABLE_bot">Открыть бота в Telegram</a>
+            </p>
+            <br>
+            <p>
+                <a href="https://github.com/hecronk/FileUploadService" style="text-decoration: none">
+                    <img src="{{ url_for('static', filename = 'icons/file-earmark-arrow-up-fill.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
+                </a>
+                <a href="https://github.com/hecronk/FileUploadService">Облачное хранилище</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot1.jpg') }}"  width="640" height="353" >
+                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot2.jpg') }}"  width="640" height="353" >
+                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot3.jpg') }}"  width="640" height="353" >
+                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot4.jpg') }}"  width="640" height="353" >
+                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot5.jpg') }}"  width="640" height="353" >
+            </p>
+            <p>
+                Облачное хранилище - сервис с веб интерфейсом для загрузки и хранения файлов. Написан на Python, с использованием веб-фреймворка CherryPy. <br>
+                Получение файлов реализовано с помощью API.
+            </p>
+            <p>
+                <a href="https://github.com/hecronk/FlaskLearning" style="text-decoration: none">
+                    <img src="{{ url_for('static', filename = 'icons/chat-right-text-fill.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
+                </a>
+                <a href="https://github.com/hecronk/FlaskLearning">Социальная сеть</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot1.jpg') }}" >
+                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot2.jpg') }}" >
+                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot3.jpg') }}" >
+                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot4.jpg') }}" >
+                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot5.jpg') }}" >
+            </p>
+            <p>
+                Социальная сеть - проект, написанный на Python, который создавался с целью изучения веб-фреймворка Flask. <br>
+                Имеет основной функционал социальных сетей (пользователи, личные страницы, подписки, лента). Реализована система регистраций пользователя, <br>
+                восстановления пароля.
+            </p>
+            <br>
+        </div>
+    </div>
+{% endblock %}
