@@ -2,32 +2,34 @@
 
 {% block app_content %}
     <div class="container mt-4">
-        <div align="right">
-            <h2 class="bg-info text-blue">Python программист</h2>
-        </div>
-        <h2>Аминов Дамир Азатович</h2>
+        <table>
+            <tr style="margin-left: 50px">
+                <td style="padding: 10px"><b>Аминов Дамир Азатович</b></td>
+                <td style="padding-left: 800px"><b>Python программист</b></td>
+            </tr>
+        </table>
         <table>
             <tr>
                 <td><img src="{{ url_for('static', filename = 'images/Avatar.jpg') }}"></td>
-                <td><table class="table-bordered">
+                <td><table class="table-bordered" style="margin-left: 50px">
                     <tr>
-                        <td>Дата рождения</td>
+                        <td style="padding: 6px">Дата рождения</td>
                         <td class="text-center">09 декабря 2000 года</td>
                     </tr>
                     <tr>
-                        <td>Место проживания:</td>
+                        <td style="padding: 6px">Место проживания:</td>
                         <td class="text-center">г. Ревда</td>
                     </tr>
                     <tr>
-                        <td>Телефон:</td>
+                        <td style="padding: 6px">Телефон:</td>
                         <td class="text-center"><a href="tel:+79222933944">+7 (922) 293-39-44</a></td>
                     </tr>
                     <tr>
-                        <td>Email: </td>
+                        <td style="padding: 6px">Email: </td>
                         <td class="text-center"><a href="mailto:1damiraminov@gmail.com">1damiraminov@gmail.com</a></td>
                     </tr>
                     <tr>
-                        <td>Github: </td>
+                        <td style="padding: 6px">Github: </td>
                         <td class="text-center"><a href="https://github.com/hecronk">
                             <img src="{{ url_for('static', filename = 'icons/github.svg') }}"></a>
                             <a href="https://github.com/hecronk">ссылка</a>
@@ -41,13 +43,13 @@
         <br>
         <table class="table-bordered">
             <tr>
-                <td>01.07.2020 - 23.07.2020</td>
-                <td>&bull; Прохождение учебной практики по программированию python.
+                <td style="padding: 6px">01.07.2020 - 23.07.2020</td>
+                <td style="padding: 6px">&bull; Прохождение учебной практики по программированию python.
                     Исследование датасета с использованием библиотек python (pandas, matplotlib, sklearn).</td>
             </tr>
             <tr>
-                <td>07.07.2021 - 23.07.2021</td>
-                <td>&bull; Прохождение учебной практики по программированию python в компании ООО “К ТЕЛЕКОМ”.
+                <td style="padding: 6px">07.07.2021 - 23.07.2021</td>
+                <td style="padding: 6px">&bull; Прохождение учебной практики по программированию python в компании ООО “К ТЕЛЕКОМ”.
                     Разработка сервиса для загрузки статических файлов (CherryPy, Jinja2)</td>
             </tr>
         </table>
@@ -56,12 +58,12 @@
         <br>
         <table class="table-bordered">
             <tr>
-                <td><b>2016 - 2019</b></td>
-                <td>Свердловский областной медицинский колледж</td>
+                <td style="padding: 6px"><b>2016 - 2019</b></td>
+                <td style="padding: 6px">Лицей при Свердловском областном медицинском колледже</td>
             </tr>
             <tr>
-                <td><b>2019 - ...</b></td>
-                <td>Уральский Государственный Университет Путей Сообщения.
+                <td style="padding: 6px"><b>2019 - ...</b></td>
+                <td style="padding: 6px">Уральский Государственный Университет Путей Сообщения.
                     Направление подготовки: 09.03.02 “Информационные системы и технологии”
                     (3 курс, очное отделение, бакалавр, бюджет)</td>
             </tr>
@@ -71,13 +73,13 @@
         <br>
         <table class="table-bordered">
             <tr>
-                <td><b>2010 - 2018</b></td>
-                <td>Английский язык. Окончил общий курс, соответствующий уровню B2 UPPER-INTERMEDIATE,
+                <td style="padding: 6px"><b>2010 - 2018</b></td>
+                <td style="padding: 6px">Английский язык. Окончил общий курс, соответствующий уровню B2 UPPER-INTERMEDIATE,
                     согласно Общеевропейской шкале уровней владения иностранным языком CEFR.</td>
             </tr>
             <tr>
-                <td><b>2021</b></td>
-                <td>Окончил курс “Анализ данных в индустрии” от Тинькофф Образование</td>
+                <td style="padding: 6px"><b>2021</b></td>
+                <td style="padding: 6px">Окончил курс “Анализ данных в индустрии” от Тинькофф Образование</td>
             </tr>
         </table>
         <br>
