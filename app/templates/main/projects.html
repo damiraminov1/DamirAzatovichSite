@@ -4,10 +4,11 @@
     Мои проекты - Аминов Дамир Азатович
 {% endblock %}
 
+
 {% block content %}
-    <div>
-        <div align="center">
-            <h1>Мои основные проекты:</h1>
+    <div class="container mt-4" style="min-width: 1170px">
+        <div class="text-center">
+            <h3>Мои основные проекты:</h3>
         </div>
         <div>
             <p>
@@ -20,11 +21,6 @@
                 УрГУПС Расписание - бот для скачивания актуального расписания. Написан на Python, с использованием PyTelegramBotAPI. <br>
                 Работает 24/7 и выполняет роль агрегатора актуального расписания УрГУПС. <a href="https://t.me/USURT_TIMETABLE_bot">Открыть бота в Telegram</a>
             </p>
-             <p>
-                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot1.jpg') }}"  width="592" height="509" >
-                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot2.jpg') }}"  width="592" height="509" >
-                <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot3.jpg') }}"  width="592" height="509" >
-            </p>
             <p>
                 <a href="https://github.com/hecronk/FileUploadService" style="text-decoration: none">
                     <img src="{{ url_for('static', filename = 'icons/file-earmark-arrow-up-fill.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
@@ -36,13 +32,6 @@
                 Получение файлов реализовано с помощью API.
             </p>
             <p>
-                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot1.jpg') }}"  width="640" height="353" >
-                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot2.jpg') }}"  width="640" height="353" >
-                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot3.jpg') }}"  width="640" height="353" >
-                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot4.jpg') }}"  width="640" height="353" >
-                <img src="{{ url_for('static', filename = 'images/FileUploadServiceScreenshot5.jpg') }}"  width="640" height="353" >
-            </p>
-            <p>
                 <a href="https://github.com/hecronk/FlaskLearning" style="text-decoration: none">
                     <img src="{{ url_for('static', filename = 'icons/chat-right-text-fill.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
                 </a>
@@ -51,13 +40,6 @@
             <p>
                 Социальная сеть - проект, написанный на Python, который создавался с целью изучения веб-фреймворка Flask. <br>
                 Имеет основной функционал социальных сетей (пользователи, личные страницы, подписки, лента). Реализована система регистрации пользователей, восстановления пароля.
-            </p>
-            <p>
-                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot1.jpg') }}" width="734" height="394" >
-                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot2.jpg') }}" width="734" height="394" >
-                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot3.jpg') }}" width="734" height="394" >
-                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot4.jpg') }}" width="734" height="394" >
-                <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot5.jpg') }}" width="734" height="394" >
             </p>
         </div>
     </div>
