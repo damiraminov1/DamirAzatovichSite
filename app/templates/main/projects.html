@@ -1,11 +1,15 @@
 {% extends 'main/base.html' %}
 
-{% block app_content %}
-    <div align="center">
-        <h1>Мои основные проекты:</h1>
-    </div>
+{% block title %}
+    Мои проекты - Аминов Дамир Азатович
+{% endblock %}
+
+{% block content %}
     <div>
-        <div class="navbar-brand" style="min-width: 1252px" href="https://github.com/hecronk/TimetableHecronkTelegramBot">
+        <div align="center">
+            <h1>Мои основные проекты:</h1>
+        </div>
+        <div>
             <p>
                 <a href="https://github.com/hecronk/TimetableHecronkTelegramBot" style="text-decoration: none">
                     <img src="{{ url_for('static', filename = 'icons/telegram.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
@@ -16,12 +20,11 @@
                 УрГУПС Расписание - бот для скачивания актуального расписания. Написан на Python, с использованием PyTelegramBotAPI. <br>
                 Работает 24/7 и выполняет роль агрегатора актуального расписания УрГУПС. <a href="https://t.me/USURT_TIMETABLE_bot">Открыть бота в Telegram</a>
             </p>
-            <p>
+             <p>
                 <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot1.jpg') }}"  width="592" height="509" >
                 <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot2.jpg') }}"  width="592" height="509" >
                 <img src="{{ url_for('static', filename = 'images/TelegramBotScreenshot3.jpg') }}"  width="592" height="509" >
             </p>
-            <br>
             <p>
                 <a href="https://github.com/hecronk/FileUploadService" style="text-decoration: none">
                     <img src="{{ url_for('static', filename = 'icons/file-earmark-arrow-up-fill.svg') }}" alt="" width="120" height="96" class="d-inline-block align-text">
@@ -56,7 +59,6 @@
                 <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot4.jpg') }}" width="734" height="394" >
                 <img src="{{ url_for('static', filename = 'images/FlaskLearningScreenshot5.jpg') }}" width="734" height="394" >
             </p>
-            <br>
         </div>
     </div>
 {% endblock %}
