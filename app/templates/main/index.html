@@ -1,17 +1,14 @@
 {% extends 'main/base.html' %}
 
-{% block app_content %}
+{% block content %}
     <div class="container mt-4" style="min-width: 1170px">
-        <table>
-            <tr style="margin-left: 50px">
-                <td style="padding: 10px"><b>Аминов Дамир Азатович</b></td>
-                <td style="padding-left: 750px"><b>Python программист</b></td>
-            </tr>
-        </table>
-        <table>
+        <table style="margin-left: auto; margin-right: auto">
             <tr>
-                <td><img src="{{ url_for('static', filename = 'images/Avatar.jpg') }}" width="115%" height="115%"></td>
-                <td><table class="table-bordered" style="margin-left: 50px">
+                <td><img src="{{ url_for('static', filename = 'images/Avatar.jpg') }}" width="115%" height="115%" style="border-radius: 100px"></td>
+                <td><table style="margin-left: 50px">
+                    <tr>
+                        <td><b>Аминов Дамир Азатович <br> Python программист </b></td>
+                    </tr>
                     <tr>
                         <td style="padding: 6px">Дата рождения</td>
                         <td class="text-center">09 декабря 2000 года</td>
@@ -46,35 +43,39 @@
             </tr>
         </table>
         <br>
-            <b>Опыт работы</b>
+            <div class="text-center" style="margin: 65px">
+                <h3>Опыт работы</h3>
+            </div>
         <br>
-        <table class="table-bordered">
+        <table>
             <tr>
-                <td style="padding: 6px">01.07.2020 - 23.07.2020</td>
+                <td style="padding: 6px; width: 200px" class="text-center">01.07.2020 - 23.07.2020</td>
                 <td style="padding: 6px">&bull; Прохождение учебной практики по программированию python.
                     Исследование датасета с использованием библиотек python (pandas, matplotlib, sklearn).</td>
             </tr>
             <tr>
-                <td style="padding: 6px">07.07.2021 - 23.07.2021</td>
+                <td style="padding: 6px; width: 200px" class="text-center">07.07.2021 - 23.07.2021</td>
                 <td style="padding: 6px">&bull; Прохождение учебной практики по программированию python в компании ООО “К ТЕЛЕКОМ”.
                     Разработка сервиса для загрузки статических файлов (CherryPy, Jinja2)</td>
             </tr>
             <tr>
-                <td style="padding: 6px">30.12.2021 - 27.01.2022</td>
+                <td style="padding: 6px; width: 200px" class="text-center">30.12.2021 - 27.01.2022</td>
                 <td style="padding: 6px">&bull; Наставник онлайн курса Python-разработки в IT School Maxima.
                     Ответы на вопросы учеников курса в чате. Проверка домашних заданий. Проведение онлайн консультаций.</td>
             </tr>
         </table>
         <br>
-            <b>Образование</b>
+            <div class="text-center">
+                <h3>Образование</h3>
+            </div>
         <br>
-        <table class="table-bordered">
+        <table>
             <tr>
-                <td style="padding: 6px"><b>2016 - 2019</b></td>
+                <td style="padding: 6px; width: 200px" class="text-center">2016 - 2019</td>
                 <td style="padding: 6px">Лицей ГБПОУ "Свердловский областной медицинский колледж"</td>
             </tr>
             <tr>
-                <td style="padding: 6px"><b>2019 - ...</b></td>
+                <td style="padding: 6px; width: 200px" class="text-center">2019 - ...</td>
                 <td style="padding: 6px">Уральский Государственный Университет Путей Сообщения.
                     Направление подготовки: 09.03.02 “Информационные системы и технологии”
                     (3 курс, очное отделение, бакалавр, бюджет)</td>
@@ -83,19 +84,21 @@
         <br>
             <b>Дополнительное образование</b>
         <br>
-        <table class="table-bordered">
+        <table>
             <tr>
-                <td style="padding: 6px"><b>2010 - 2018</b></td>
+                <td style="padding: 6px; width: 200px" class="text-center">2010 - 2018</td>
                 <td style="padding: 6px">Английский язык. Окончил общий курс, соответствующий уровню B2 UPPER-INTERMEDIATE,
                     согласно Общеевропейской шкале уровней владения иностранным языком CEFR.</td>
             </tr>
             <tr>
-                <td style="padding: 6px"><b>2021</b></td>
+                <td style="padding: 6px; width: 200px" class="text-center">2021</td>
                 <td style="padding: 6px">Окончил курс “Анализ данных в индустрии” от Тинькофф Образование</td>
             </tr>
         </table>
         <br>
-            <b>Навыки</b>
+            <div class="text-center">
+                <h3>Навыки</h3>
+            </div>
         <br>
         <p>
             &bull; Разработка приложений на Python (frameworks: Flask, CherryPy), C#, Unity (Android); <br>
@@ -113,7 +116,7 @@
         </p>
         <div class="text-center">
             <a href="{{ url_for('main.projects') }}">
-                <button type="button" class="btn btn-info" style="margin: 100px">Посмотреть мои проекты</button>
+                <button type="button" class="btn btn-default" style="margin: 100px; width: 300px; height: 50px">Посмотреть мои проекты</button>
             </a>
         </div>
     </div>
