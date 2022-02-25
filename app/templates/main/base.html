@@ -4,30 +4,29 @@
     {{ title }} - Аминов Дамир Азатович
 {% endblock %}
 
-{% block body %}
-    {% block navbar %}
-        <nav class="navbar navbar-default" style="min-width: 1252px">
-            <div class="container-fluid, text-right">
-                <div class="navbar-brand" href={{ url_for('main.index') }}>
-                    <a href="{{ url_for('main.index') }}">
-                        <img src="{{ url_for('static', filename = 'icons/award-fill.svg') }}" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    </a>
-                </div>
-                <div class="navbar-brand" href={{ url_for('main.index') }}>
-                    <a href="{{ url_for('main.index') }}">Damir Azatovich</a>
-                </div>
+{% block navbar %}
+    <nav class="navbar navbar-default" style="min-width: 1252px">
+        <div class="container-fluid">
+            <div class="navbar-brand" href={{ url_for('main.index') }}>
+                <a href="{{ url_for('main.index') }}">
+                    <img src="{{ url_for('static', filename = 'icons/award-fill.svg') }}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
             </div>
-            <div class="collapse navbar-collapse center-block">
-                <ul class="nav navbar-nav">
-                    <li> <a href={{ url_for('main.index') }}>Главная </a> </li>
-                    <li> <a href={{ url_for('main.projects') }}>Проекты </a> </li>
-                </ul>
+            <div class="navbar-brand" href={{ url_for('main.index') }}>
+                <a href="{{ url_for('main.index') }}">Damir Azatovich</a>
             </div>
-        </nav>
-    {% endblock %}
-    {% block content %}
-        {% block app_content %}{% endblock %}
-    {% endblock %}
+        </div>
+        <div class="navbar">
+            <ul class="nav navbar-nav">
+                <li> <a href={{ url_for('main.index') }}>Главная </a> </li>
+                <li> <a href={{ url_for('main.projects') }}>Проекты </a> </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    {% block app_content %}{% endblock %}
     {% block footer %}
         <div class="text-center">
             &copy; Аминов Дамир Азатович - <a href="https://damirazatovich.com">damirazatovich.com</a>
