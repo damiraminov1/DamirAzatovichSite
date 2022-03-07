@@ -6,23 +6,46 @@
 
 {% block navbar %}
     <nav class="navbar navbar-default" style="min-width: 1252px">
-        <div class="container-fluid">
-            <div class="navbar-brand" href={{ url_for('main.index') }}>
-                <a href="{{ url_for('main.index') }}">
-                    <img src="{{ url_for('static', filename = 'icons/award-fill.svg') }}" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('main.index') }}">Дамир Азатович</a>
             </div>
-            <div class="navbar-brand" href={{ url_for('main.index') }}>
-                <a href="{{ url_for('main.index') }}">Damir Azatovich</a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for('main.index') }}">Главная</a></li>
+                    <li><a href="{{ url_for('main.projects') }}">Проекты</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="navbar">
-            <ul class="nav navbar-nav">
-                <li> <a href={{ url_for('main.index') }}>Главная </a> </li>
-                <li> <a href={{ url_for('main.projects') }}>Проекты </a> </li>
-            </ul>
         </div>
     </nav>
+
+
+
+
+{#    <nav class="navbar navbar-default" style="min-width: 1252px">#}
+{#        <div class="container-fluid">#}
+{#            <div class="navbar-brand" href={{ url_for('main.index') }}>#}
+{#                <a href="{{ url_for('main.index') }}">#}
+{#                    <img src="{{ url_for('static', filename = 'icons/award-fill.svg') }}" alt="" width="30" height="24" class="d-inline-block align-text-top">#}
+{#                </a>#}
+{#            </div>#}
+{#            <div class="navbar-brand" href={{ url_for('main.index') }}>#}
+{#                <a href="{{ url_for('main.index') }}">Damir Azatovich</a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="navbar">#}
+{#            <ul class="nav navbar-nav">#}
+{#                <li> <a href={{ url_for('main.index') }}>Главная </a> </li>#}
+{#                <li> <a href={{ url_for('main.projects') }}>Проекты </a> </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </nav>#}
 {% endblock %}
 
 {% block content %}
